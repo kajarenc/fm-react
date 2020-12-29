@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function useDropdown(label, defaultOption, options) {
   const [state, setState] = useState(defaultOption);
