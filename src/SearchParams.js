@@ -70,6 +70,9 @@ function SearchParams(props) {
             onChange={(e) => setTheme(e.target.value)}
             onBlur={(e) => setTheme(e.target.value)}
           >
+            <option key="darkgreen" value="darkgreen">
+              Dark Green
+            </option>
             <option key="pink" value="pink">
               Pink
             </option>
