@@ -1,9 +1,9 @@
-import React, {FunctionComponent} from "react";
+import React from "react";
 import { Link } from "@reach/router";
 import { Photo } from "@frontendmasters/pet";
 
 
-interface IProps {
+interface IPetProps {
   name: string;
   animal: string;
   breed: string;
@@ -12,7 +12,7 @@ interface IProps {
   id: number;
 }
 
-const Pet: FunctionComponent<IProps> = (props) => {
+const Pet = (props: IPetProps) => {
   const { name, animal, breed, media, location, id } = props;
 
   let hero = "http://placecorgi.com/300/300";
