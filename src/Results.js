@@ -1,5 +1,5 @@
 import React from "react";
-import Pet from "./Pet.js";
+import Pet from "./Pet";
 
 function Results({ pets }) {
   return (
