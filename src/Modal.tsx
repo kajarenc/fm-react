@@ -14,6 +14,7 @@ const Modal = ({ children }: { children: ReactChild[] }) => {
     modalRoot.appendChild(elRef.current);
 
     return () => {
+      // eslint-disable-next-line
       modalRoot.removeChild(elRef.current);
     };
   }, []);
