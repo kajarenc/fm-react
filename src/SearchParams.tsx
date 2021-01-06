@@ -2,10 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import pet, { ANIMALS as ANIMALS_TYPE, Animal } from "@frontendmasters/pet";
 import ThemeContext from "./ThemeContext";
 import useDropdown from "./useDropdown";
+import { RouteComponentProps } from "@reach/router";
 
 import Results from "./Results";
 
-function SearchParams() {
+function SearchParams(props: RouteComponentProps) {
   const [pets, setPets] = useState([] as Animal[]);
   const [location, setLocation] = useState("Seattle, WA");
   const [breedsAPIList, updateBreedsAPIList] = useState([] as string[]);
