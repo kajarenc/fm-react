@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
-import pet, { ANIMALS as ANIMALS_TYPE } from "@frontendmasters/pet";
+import pet, { ANIMALS as ANIMALS_TYPE, Animal } from "@frontendmasters/pet";
 import ThemeContext from "./ThemeContext";
 import useDropdown from "./useDropdown";
 
 import Results from "./Results";
 
-function SearchParams(props) {
-  const [pets, setPets] = useState([]);
+function SearchParams() {
+  const [pets, setPets] = useState([] as Animal[]);
   const [location, setLocation] = useState("Seattle, WA");
-  const [breedsAPIList, updateBreedsAPIList] = useState([]);
+  const [breedsAPIList, updateBreedsAPIList] = useState([] as string[]);
   const [theme, setTheme] = useContext(ThemeContext);
   const [animalType, AnimalDropdown] = useDropdown(
     "Animal",
