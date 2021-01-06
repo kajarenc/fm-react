@@ -1,7 +1,12 @@
+import { Animal } from "@frontendmasters/pet";
 import React from "react";
 import Pet from "./Pet";
 
-function Results({ pets }) {
+interface IResultProps {
+  pets: Animal[];
+}
+
+function Results({ pets }:IResultProps) {
   return (
     <div className="search">
       {!pets.length ? (
